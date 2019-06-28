@@ -28,7 +28,6 @@ class FilmShow extends React.Component {
               this.setState({youtubeID: res.data.results[0].key})
             })
         })
-
     }
   }
 
