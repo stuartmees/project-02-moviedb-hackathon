@@ -167,8 +167,6 @@ Notice above that the conditional if statement needed to be included. This was d
 
 As described above one of the main things we learnt from this process is that third party APIs, although can give you the data you want, that data might be hard to isolate due to the design of the API. So you must be prepared to combine multiple APIs to get to data you require. This is actually quite a satisfying process when successful!
 
-
 ## Future features
-_If you were to revisit this project in the future what features would you add?_
 
 Due to time constraints we did not have much time to refactor the code. This meant some failings in the DRY coding stakes. In particular on the film show page we have the same pair of axios requests in both componentDidMount and componentDidUpdate which could have been rewritten as one reusable function.
