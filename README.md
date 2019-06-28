@@ -1,6 +1,6 @@
 # project-02-moviedb-hackathon
 
-### Timeframe
+## Timeframe
 2 days
 
 ## Technologies used
@@ -13,7 +13,7 @@
 * The Movie Database API
 
 
-### Installation
+## Installation
 
 Download the directory and from with the directory in your CLI :
 
@@ -105,14 +105,15 @@ When a FilmCard is clicked on it open up the relevant FilmShow component:
 
 <img width="1415" alt="Screenshot 2019-06-14 at 17 15 12" src="https://user-images.githubusercontent.com/35113861/59522994-02050e80-8ec8-11e9-91a4-8194afa7edac.png">
 
-### Challenges and wins
+## Challenges and Wins
 
 #### Combining 2 APIs
 
 We ended up using two very similar APIs. This happened because we found that the OMDB API gave us much better search results and some good information about the film but the The Moviedb API could provide two things that OMDB didn't. These were youtube id for trailers which we could use to embed the videos onto the page and a list of similar movies. This meant we found ourselves having to make requests to both APIs to get all the information we wanted to show for each film.
 
 
-```axios.get(`http://www.omdbapi.com/?i=${this.props.match.params.id}&apikey=f09ea565`)
+```
+axios.get(`http://www.omdbapi.com/?i=${this.props.match.params.id}&apikey=f09ea565`)
      .then(res => (this.setState({film: res.data})))
 ```
 
@@ -130,7 +131,7 @@ The first one searches for the film by IMDB id and returns the film data from Th
      })
 ```
 
-####Rendering FilmShow component from recommended films
+#### Rendering FilmShow Component from Recommended Films
 
 At the bottom of the FilmShow component a selection of films are displayed from The Movie Database API.
 
