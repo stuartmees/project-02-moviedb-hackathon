@@ -132,7 +132,7 @@ The first one searches for the film by IMDB id and returns the film data from Th
 
 ####Rendering FilmShow component from recommended films
 
-At the bottom of the FilmShow component a selecting of films are displayed from The Movie Database API.
+At the bottom of the FilmShow component a selection of films are displayed from The Movie Database API.
 
 When one is selected the app is pushed to a new URL which we wanted to then be used to displays to appropriate FilmShow component:
 
@@ -162,6 +162,11 @@ componentDidUpdate(prevProps){
 ```
 
 Notice above that the conditional if statement needed to be included. This was due to the fact that state was being set in componentDidUpdate which would therefore make componentDidUpdate run  in an infinte loop. We only wanted the componentDidUpdate code to run when the URL and therefore the prop had changed.
+
+## Reflections
+
+As described above one of the main things we learnt from this process is that third party APIs, although can give you the data you want, that data might be hard to isolate due to the design of the API. So you must be prepared to combine multiple APIs to get to data you require. This is actually quite a satisfying process when successful!
+
 
 ## Future features
 _If you were to revisit this project in the future what features would you add?_
